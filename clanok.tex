@@ -42,29 +42,86 @@ Hry a virtuálna realita by mohli pacientov viacej motivovať do cvičenie čo b
 
 
 \section{Úvod}
-...
+
+V posledných rokoch sa poožitie VR a hier rozšírilo do mnohých oblastí života. V článku sa zameriavam presnejšie na použitie v zdravotníctve. Specifickejšie použitie hier a VR pri rehabilitáciach, či už u pacientov po mŕtvici ale aj pri bežných úrazoch. 
+
+Napríklad sa zameriavam na VR nástroj Leap motion. Ďalším nástrojom použitím v medicíne je  SilverTune. Ktorá pomáha pacientom po mŕtvici. V článku sa zameriavam ale aj na iné nástroje ktoré sú použité napríklad aj pri rehabilitácii členku. 
+
+Samozrejme všetko má svoje výhody ale aj nevýhody preto sú v článku zhrnuté aj výhody a nevýhody, ktoré použitie týchto zariadení so sebou prináša.
+
+\newpage
+
+\section{Použitie v praxi}
+
+
+\subsection{SilverTune}
+SilverTune je nástroj, ktorý je výsledkom výskumu, ktorého hlavným cielom bolo vytvoriť multi-senzorový hudobný nástroj. Výskum sa zameriaval na použitie tohto nástorje pri rehabilitácií starších pacientov po mŕtvici v Singapure.
+
+SilverTune je ako hudobný nástroj, ktorý poskytuje šesť typov hudobných zvukov a herných interakcií, aby uspokojil rôzne preferencie pacientov a terapeutické požiadavky na pohyb. 
+
+SilverTune môže tiež zaznamenávať údaje, analyzovať výkon v reálnom čase a poskytovať spätnú väzbu pacientom aj terapeutom.
+
+Mobilná aplikácia SilverTune bola vyvinutá ako sprievodná pre muzikoterapiu SilverTune. Aplikácia zaznamenáva profil používateľa a údaje zadané zo SilverTune pre budúcu analýzu terapeutom. 
+
+Na hranie pomocou zariadenia SilverTune boli vyvinuté dve hry. Prvou je dostihová hra, v ktorej sa kôň pohybuje po dostihovej dráhe. Druhou je stolnotenisová hra\ref{fig:SilverTune Stolný tennis}, v ktorej sa loptička na stolný tenis musí podávať cez sieť, aby získala body. Dostihová hra uľahčovala ohýbanie a predlžovanie ramien, zatiaľ čo stolnotenisová hra uľahčovala horizontálny únos a addukciu ramena.\cite{9483850}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{obrazky/table_tennnis.png}
+    \caption{Stolný tennis}
+    \label{fig:SilverTune Stolný tennis}
+\end{figure}
+
+
+\subsection{Leap motion}
+Leap motion dostal veľa pozornosti in posledných pár rokoch z dôvodu jeho nemeratelného množstva použití ako napríklad robotika, vzdelávanie, medicína atď. Hlavnou myšlienkou gamifikácie rehabilitácie je pomôcť rozvíjať svalový tonus, zefektívniť rehabilitáciu a motivovať pacientov.
+
+Ukázalo sa, že VR a hry sú prospešné pri zlepšovaní funkcie horných končatín, ak sa používajú ako doplnok k bežnej starostlivosti alebo v porovnaní s konvenčnou terapiou.
+
+Hra bola vyvinutá  pomocou Unity 3D a volá sa Escape game\ref{fig:LeapMotion escape game}. Hra má rôzne možnosti, úlohy a cvičenia súvisiace s 3D chytaním, ukazovaním, zdvíhaním, hádzaním a ďalšími cvičeniami na rehabilitáciu rúk. Hlavnou súčasťou tejto VR rehabilitácie je Leap Motion, ktorý sleduje ruky. 
+
+Všetky predmety a štruktúry hry boli vytvorené v Autodesk 3D Max a Cinema 4D, potom importované do prostredia Unity.\cite{7926560}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.5\textwidth]{obrazky/Escape game.png}
+    \caption{Escape game}
+    \label{fig:LeapMotion escape game}
+\end{figure}
+
+\subsection{Myo armband}
+Systém na rehabilitácie rúk, inšpirovaný videohernými zariadeniami. Tento systém sa skladá z Myo band a robotickej rukavice. Myo band je nositeľné zariadenie v hodnote ~200 eur.
+
+Zariadenie poskytuje dva druhy údajov, priestorové a gestové. 
+Priestorové údaje informujú o orientácii a pohybe ramena používateľa, zatiaľ čo gestové údaje informujú o tom, čo používateľ robí rukou. Všetky údaje sa komunikujú cez Bluetooth s Unity3D. Tatktiež sú použité dotykové ploch  na detekciu úplne otvorenej/zatvorenej ruky.
+
+V Unity 3D bola vytvorená hra na tréning ruky, v ktorej musí používateľ chytiť, držať a prepravovaťa kocku v niekoľkých čoraz náročnejších úrovniach. V hre hráč vidí virtuálne ruky/ramená, ktoré replikujú pohyby používateľa, vďaka tomu sa použvateľ cíti viacej ponorený do hry. 
+
+V súčasnosti hra funguje nasledovne: používateľ nosí Myo band na zdravom predlaktí a vykonáva požadované pohyby\ref{fig:Myoband pohyby}, ktoré sa premietajú do pohybu virtuálnej ruky.
+Pohyby rúk sa potom replikujú  do pohybu robotickej rukavice, ktorú používateľ nosí na rehabilitovanej ruke. 
+ 
+Systém bol doteraz testovaný iba na zdravých jedincoch, ale plánujú sa aj testy s pacientami po mozgovej príhode. Preto je tažké jednoznačne povedať či je tento spôsob rehabilitácie účinný a  sú stále potrebné daľšie testy a štúdie na preukázanie benifitov pre pacientov\cite{7088817}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.5\textwidth]{obrazky/Myoband.png}
+    \caption{Myoband}
+    \label{fig:Myoband pohyby}
+\end{figure}
+
+\subsection{PhyRe}\cite{9564051}
+
+\section{Výhody} 
+Jednou z hlavných výhod VR reality a hier bolo hlavne počas pandémie COVID-19, že rehabilitácie vedeli prebiehať na dialku.
 
 
 
-\section{Použitie v praxi} \label{nejaka}
+\section{Nevýhody}
+..........\cite{7523762}
+
+
+\section{Možné problémy}
 ......
-
-
-
-\section{Výhody} \label{ina}
-.......
-
-
-
-\section{Nevýhody} \label{dolezita}
-.........\cite{7926560}
-
-
-
-\section{Možné problémy} \label{dolezitejsia}
-......
-
-
 
 \section{Reakcia na témy z prednášok}
 \paragraph{1}
@@ -80,14 +137,14 @@ Hry a virtuálna realita by mohli pacientov viacej motivovať do cvičenie čo b
 
 
 
-\section{Záver} \label{zaver} % prípadne iný variant názvu
+\section{Záver} 
 ..........
 
 
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+
+
 \bibliography{literatura}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
