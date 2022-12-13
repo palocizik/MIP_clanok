@@ -12,6 +12,7 @@
 
 \usepackage{cite}
 \usepackage{times}
+\usepackage{float}
 
 \pagestyle{headings}
 
@@ -54,18 +55,37 @@ Samozrejme všetko má svoje výhody ale aj nevýhody preto sú v článku zhrnu
 \section{Použitie v praxi}
 
 
-\subsection{SilverTune}
+\subsection{SilverTune}\cite{9483850}
 SilverTune je nástroj, ktorý je výsledkom výskumu, ktorého hlavným cielom bolo vytvoriť multi-senzorový hudobný nástroj. Výskum sa zameriaval na použitie tohto nástorje pri rehabilitácií starších pacientov po mŕtvici v Singapure.
+\newline
 
+\begin{tabular}{ |p{3cm}|p{3cm}| }
+\hline
+\multicolumn{2}{|c|}{Charakteristika zúčastnených} \\
+\hline
+Počet zúčastnených & 11 \\
+\hline
+Priemerný vek & 69 \\
+\hline
+Mužov & 7 \\
+\hline
+Žien & 4 \\
+\hline
+Čas od mŕtvice & 12 až 72 mesiacov \\
+\hline
+\end{tabular}
+\newline
+\newline
+\newline
 SilverTune je ako hudobný nástroj, ktorý poskytuje šesť typov hudobných zvukov a herných interakcií, aby uspokojil rôzne preferencie pacientov a terapeutické požiadavky na pohyb. 
 
 SilverTune môže tiež zaznamenávať údaje, analyzovať výkon v reálnom čase a poskytovať spätnú väzbu pacientom aj terapeutom.
 
 Mobilná aplikácia SilverTune bola vyvinutá ako sprievodná pre muzikoterapiu SilverTune. Aplikácia zaznamenáva profil používateľa a údaje zadané zo SilverTune pre budúcu analýzu terapeutom. 
 
-Na hranie pomocou zariadenia SilverTune boli vyvinuté dve hry. Prvou je dostihová hra, v ktorej sa kôň pohybuje po dostihovej dráhe. Druhou je stolnotenisová hra\ref{fig:SilverTune Stolný tennis}, v ktorej sa loptička na stolný tenis musí podávať cez sieť, aby získala body. Dostihová hra uľahčovala ohýbanie a predlžovanie ramien, zatiaľ čo stolnotenisová hra uľahčovala horizontálny únos a addukciu ramena.\cite{9483850}
+Na hranie pomocou zariadenia SilverTune boli vyvinuté dve hry. Prvou je dostihová hra, v ktorej sa kôň pohybuje po dostihovej dráhe. Druhou je stolnotenisová hra\ref{fig:SilverTune Stolný tennis}, v ktorej sa loptička na stolný tenis musí podávať cez sieť, aby získala body. Dostihová hra uľahčovala ohýbanie a predlžovanie ramien, zatiaľ čo stolnotenisová hra uľahčovala horizontálny únos a addukciu ramena.
 
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width = 0.5\textwidth]{obrazky/table_tennnis.png}
     \caption{Stolný tennis}
@@ -73,14 +93,14 @@ Na hranie pomocou zariadenia SilverTune boli vyvinuté dve hry. Prvou je dostiho
 \end{figure}
 
 
-\subsection{Leap motion}
+\subsection{Leap motion}\cite{7926560}
 Leap motion dostal veľa pozornosti in posledných pár rokoch z dôvodu jeho nemeratelného množstva použití ako napríklad robotika, vzdelávanie, medicína atď. Hlavnou myšlienkou gamifikácie rehabilitácie je pomôcť rozvíjať svalový tonus, zefektívniť rehabilitáciu a motivovať pacientov.
 
 Ukázalo sa, že VR a hry sú prospešné pri zlepšovaní funkcie horných končatín, ak sa používajú ako doplnok k bežnej starostlivosti alebo v porovnaní s konvenčnou terapiou.
 
 Hra bola vyvinutá  pomocou Unity 3D a volá sa Escape game\ref{fig:LeapMotion escape game}. Hra má rôzne možnosti, úlohy a cvičenia súvisiace s 3D chytaním, ukazovaním, zdvíhaním, hádzaním a ďalšími cvičeniami na rehabilitáciu rúk. Hlavnou súčasťou tejto VR rehabilitácie je Leap Motion, ktorý sleduje ruky. 
 
-Všetky predmety a štruktúry hry boli vytvorené v Autodesk 3D Max a Cinema 4D, potom importované do prostredia Unity.\cite{7926560}
+Všetky predmety a štruktúry hry boli vytvorené v Autodesk 3D Max a Cinema 4D, potom importované do prostredia Unity.
 
 \begin{figure}
     \centering
@@ -89,7 +109,7 @@ Všetky predmety a štruktúry hry boli vytvorené v Autodesk 3D Max a Cinema 4D
     \label{fig:LeapMotion escape game}
 \end{figure}
 
-\subsection{Myo armband}
+\subsection{Myo armband}\cite{7088817}
 Systém na rehabilitácie rúk, inšpirovaný videohernými zariadeniami. Tento systém sa skladá z Myo band a robotickej rukavice. Myo band je nositeľné zariadenie v hodnote ~200 eur.
 
 Zariadenie poskytuje dva druhy údajov, priestorové a gestové. 
@@ -97,31 +117,68 @@ Priestorové údaje informujú o orientácii a pohybe ramena používateľa, zat
 
 V Unity 3D bola vytvorená hra na tréning ruky, v ktorej musí používateľ chytiť, držať a prepravovaťa kocku v niekoľkých čoraz náročnejších úrovniach. V hre hráč vidí virtuálne ruky/ramená, ktoré replikujú pohyby používateľa, vďaka tomu sa použvateľ cíti viacej ponorený do hry. 
 
-V súčasnosti hra funguje nasledovne: používateľ nosí Myo band na zdravom predlaktí a vykonáva požadované pohyby\ref{fig:Myoband pohyby}, ktoré sa premietajú do pohybu virtuálnej ruky.
-Pohyby rúk sa potom replikujú  do pohybu robotickej rukavice, ktorú používateľ nosí na rehabilitovanej ruke. 
- 
-Systém bol doteraz testovaný iba na zdravých jedincoch, ale plánujú sa aj testy s pacientami po mozgovej príhode. Preto je tažké jednoznačne povedať či je tento spôsob rehabilitácie účinný a  sú stále potrebné daľšie testy a štúdie na preukázanie benifitov pre pacientov\cite{7088817}
+V súčasnosti hra funguje nasledovne: používateľ nosí Myo band na zdravom predlaktí a vykonáva požadované pohyby, ktoré sa premietajú do pohybu virtuálnej ruky.
+Pohyby rúk sa potom replikujú  do pohybu robotickej rukavice, ktorú používateľ nosí na rehabilitovanej ruke.\ref{fig:Diagram}
 
-\begin{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{obrazky/Diagram.png}
+    \caption{Diagram}
+    \label{fig:Diagram}
+\end{figure}
+ 
+Systém bol doteraz testovaný iba na zdravých jedincoch, ale plánujú sa aj testy s pacientami po mozgovej príhode. Preto je tažké jednoznačne povedať či je tento spôsob rehabilitácie účinný a  sú stále potrebné daľšie testy a štúdie na preukázanie benifitov pre pacientov.
+
+\begin{figure}[H]
     \centering
     \includegraphics[width = 0.5\textwidth]{obrazky/Myoband.png}
     \caption{Myoband}
     \label{fig:Myoband pohyby}
 \end{figure}
 
-\subsection{PhyRe}\cite{9564051}
+\subsection{PhyRe UP!}\cite{9564051}
+PhyRe UP! je nový diaľkový rehabilitačný systém, ktorý využíva zmiešanú realitu a gamifikačné techniky\ref{fig:phyre}. PhyRe Up! bol navrhnutý pre pacientov s mozgovou príhodou, aby vykonávali terapeutické cvičenia doma, s veľkou presnosťou a s potenciálnym dohľadom lekárov. 
 
-\section{Výhody} 
+Cieľom systému je zvýšiť motiváciu pacienta, ako aj udržať kvalitu a výkon pri cvičení, podobne ako pri účasti na osobných stretnutiach s terapeutmi. Základná architektúra kombinuje deklaratívne, procedurálne a podmienené znalosti na riadenie rehabilitačného procesu, ktorý ponúka flexibilitu a škálovateľnosť na zlepšenie schopností navrhovaného systému. 
+
+Experimentálne výsledky poukazujú na to, ako kombinácia zmiešanej reality a gamifikácie významne ovplyvňuje presnosť rehabilitačných cvičení, ktoré predtým definovali terapeuti. Najmä vykonané experimenty v prvej validačnej fáze PhyRe Up! ukazujú, že vizuálna spätná väzba výrazne znižuje medzikroky potrebné na dokončenie cvičenia. Presnosť, s akou pacient vykonáva hodnotené cvičenie prvýkrát, je väčšia ako pri použití tradičných rehabilitačných techník.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{obrazky/PhyRe UP!.png}
+    \caption{Cvičenie s PhyRe UP!}
+    \label{fig:phyre}
+\end{figure}
+
+\subsection{Nintendo W}\cite{8940302}
+Nintendo Wii, pôvodne navrhnuté na zábavné účely, sa používalo v mnohých terapeutických výskumoch. Nintendo Wii je virtuálny systém, ktorý sa používa pri rehabilitácii po celom svete. Táto technológia priťahuje veľkú pozornosť vďaka svojim dostupným nákladom a možnosti použitia ako domáca terapia. Športové hry Wii sú opakujúce sa, špecifické a vedú k lepším terapeutickým výsledkom.
+
+Tréningový program pozostával z 30 minút konvenčnej rehabilitácie, po ktorej nasleduje 30 minút hernej terapie Nintendo Wii 2 dni v týždni, počas 5 týždňov. Herný systém Nintendo Wii vyžaduje, aby účastníci používali aktívne pohyby horných končatín na interakciu s virtuálnym prostredím. Každá relácia pozostávala z 35 minút hernej terapie Nintendo Wii s 5 minútami času odpočinku. Terapeut bol prítomný na pomoc a kvôli bezpečnosti.
+
+Nintendo Wii poskytuje bezdrôtový ovládač so zabudovanými senzormi zrýchlenia, ktoré detekujú zmeny v pohyboch a zrýchlení. Nintendo Wii bol kalibrovaný pred každým sedením, aby sa zaručilo, že pacient správne používal  s ovládač postihnutou rukou. U pacientov, ktorí neboli schopní ovládač držať, sa na upevnenie na ruku použil jednoduchý obväz. Boli vybrané dve hry Wii a hrali sa v stoji. 
+
+Terapia založená na hrách vo virtuálnej realite pomocou Nintendo Wii hier v kombinácii s klasickou rehabilitáciou sa ukázala ako účinná pri zotavení hornej končatiny u pacientov po mozgovej príhode. Jednoduchosť, bezpečnosť a nákladová efektívnosť systému virtuálnej reality by mohli podporiť jeho integráciu do rehabilitačných programov.
+
+\subsection{AnkleBot}\cite{7523762}
+AnkleBot od IMT\ref{fig:anklebot}, je rehabilitačným mechanizmom pre dolnú časť tela, konkrétne pre členok. Funguje na platforme Ubuntu verzie 5.1 a jej riadiaci algoritmus bol vyvinutý v jazyku C. 
+
+Robot je pripevnený na kolennú ortézu a pripojený k topánke navrhnutej na mieru. Keď človek pohybuje členkom, robot pohybuje chodidlom po naprogramovanej trajektórii v rôznych smeroch v rámci normálneho rozsahu pohybu členku.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.7\textwidth]{obrazky/AnkleBot.png}
+    \caption{AnkleBot}
+    \label{fig:anklebot}
+\end{figure}
+
+\section{Výhody použitia virtuálnej reality pri rehabilitáciach} 
 Jednou z hlavných výhod VR reality a hier bolo hlavne počas pandémie COVID-19, že rehabilitácie vedeli prebiehať na dialku.
 
 
 
-\section{Nevýhody}
+\section{Nevýhody použitia virtuálnej reality pri rehabilitáciach}
 ..........\cite{7523762}
 
-
-\section{Možné problémy}
-......
 
 \section{Reakcia na témy z prednášok}
 \paragraph{1}
